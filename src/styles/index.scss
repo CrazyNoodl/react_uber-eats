@@ -1,0 +1,46 @@
+@import './variables.scss';
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+body,
+button,
+a,
+select,
+input {
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+input {
+  border: none;
+  background: transparent;
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  background: none;
+}
+
+.container {
+  max-width: 1150px;
+  padding: 0 30px;
+  margin: 0 auto;
+
+  // @media (min-width: $break-point-large) {
+  //   max-width: 1520px;
+  // }
+
+  // @media (max-width: $break-point-phone) {
+  //   padding: 0 20px;
+  // }
+}

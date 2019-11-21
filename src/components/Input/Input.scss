@@ -1,0 +1,51 @@
+@import '../../styles/variables.scss';
+
+.control {
+  &__input-wrapper {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    padding: 11px 16px;
+    border: 1px solid #e0e0e0;
+    transition: border-color 300ms;
+
+    @media (max-width: $break-point-tablet-lg) {
+      max-width: 125px;
+    } 
+  }
+
+  &--focused {
+    border-color: darken(#e0e0e0, 20);
+  }
+
+  &__icon {
+    width: 14px;
+    height: 14px;
+    margin-right: 10px;
+  }
+
+  &__input {
+    max-height: 24px;
+    line-height: 24px;
+
+    &--time {
+      max-width: 75px;
+    }
+
+    &--small {
+      @media (max-width: $break-point-tablet-lg) {
+        max-width: 75px;
+      }
+    }
+  }
+
+  &__label {
+    font-size: 14px;
+    color: #662266;
+    margin-bottom: 8px;
+  }
+
+  &+& {
+    margin: 0 20px;
+  }
+}
