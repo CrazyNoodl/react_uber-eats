@@ -36,11 +36,11 @@ button {
   padding: 0 30px;
   margin: 0 auto;
 
-  // @media (min-width: $break-point-large) {
-  //   max-width: 1520px;
-  // }
+  @media (min-width: $break-point-large) {
+    max-width: 1520px;
+  }
 
-  // @media (max-width: $break-point-phone) {
-  //   padding: 0 20px;
-  // }
+  @media (max-width: $break-point-phone) {
+    padding: 0 20px;
+  }
 }
